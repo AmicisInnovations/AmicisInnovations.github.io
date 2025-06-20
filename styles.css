@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(160deg, #040053 0%, #2a2e6c 50%, #f8f8f8 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
 
 header a:hover{
     color: white;   
@@ -11,7 +20,7 @@ header a:hover{
 
 footer{
     text-align:center;
-    background-color: rgba(52, 57, 58, 0.4);;
+    background-color: rgba(52, 57, 58, 0.4);
     color: #ffffff;
     padding: 20px;
     bottom: 0px;
@@ -22,29 +31,56 @@ footer{
 }
 
 .company-name{
-    text-align: center;
+    text-align: right;
     font-family:'Times New Roman', Times, serif;
-    background-color: #040053;
+    background-color: rgba(52, 57, 58, 0.4);
     color: white;
     width: 100%;
     height:fit-content;
     margin: 0;
     padding: 20px 0;
     overflow: hidden;
+    backdrop-filter: blur(8px);
+}
+.homeinfo {
+font-family: 'Times New Roman', Times, serif;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  width: 300px;
+  background-color: rgba(52, 57, 58, 0.4); 
+  backdrop-filter: blur(8px); 
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.company-name h1{
+
+.computer{
+    width: 500px;
+ position: absolute;
+  top: 15%;
+  right: 15%;
+  box-shadow: 20px 40px 35px rgba(0, 0, 0, 0.457);
+  padding: 20px;
+
+}
+
+
+.homeinfo h2{
+    font-family: 'Times New Roman', Times, serif;
     padding: 10px;
+    color: #E5B800;
 }
-
-.company-name h2{
+.homeinfo h3{
     padding: 10px;
     color: #E5B800;
 }
 
-.company-name p{
+.homeinfo p{
     padding: 10px;
-    color: #3de2e5;
+    color: #ffffff;
 }
 .company-name a{
     text-decoration: none;
@@ -56,13 +92,32 @@ footer{
 }
 
 .company-name a:hover{
-    color: #e50000;
+    color: rgb(1, 255, 247);
 }
 
 
 .company-name .logo {
   position: absolute;
-  top: 10px;
+  top: 0px;
   left: 20px;
-  height: 125px;
+  height: 60px;
+  width: 60px;
+
+}
+.company-name .brandname {
+  position: absolute;
+  top: 0px;
+  left: 60px;
+  height: 45px;
+  width: 225px;
+
+}
+
+@media screen and (max-width: 768px) {
+  .homeinfo {
+    position: static;
+    transform: none;
+    width: auto;
+    margin: 20px;
+  }
 }
