@@ -213,9 +213,9 @@ body {
 
 /* Flip card container */
 .card-container {
-  width: 300px;
-  height: 350px;
-  margin: auto;
+  perspective: 1000px;
+  width: 280px;
+  height: 360px;
 }
 
 
