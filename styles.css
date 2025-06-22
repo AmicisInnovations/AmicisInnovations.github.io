@@ -174,6 +174,171 @@ padding: 20px;
 }
 
 
+.product-info{
+  color: #ffffff;
+  padding: 100px 100px 225px 90px;
+  background-color: rgba(52, 57, 58, 0.4);
+  backdrop-filter: blur(20px);
+
+}
+
+
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+ 
+  min-height: 100vh;
+  color: white;
+  backdrop-filter: blur(15px);
+}
+
+/* Swiper layout */
+.swiper {
+  width: 100%;
+  padding: 60px ;
+  margin-top: 20px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Flip card container */
+.card-container {
+  width: 300px;
+  height: 350px;
+  margin: auto;
+}
+
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card-container.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Card faces */
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: rgba(1, 1, 1, 0.402);
+  backdrop-filter: blur(8px);
+  color: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-front {
+  z-index: 2;
+}
+.card-front h3 {
+  color: #E5B800;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.card-back p {
+  padding: 0 10px;
+  font-size: 15px;
+}
+
+/* Button */
+.flip-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #f8d33d;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.flip-btn:hover {
+  background-color: #e5b800;
+}
+
+/* Swiper controls */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #E5B800;
+}
+
+.swiper-pagination-bullet {
+  background: #f8d33d;
+}
+
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    width: 90%;
+    height: auto;
+  }
+
+  .card-face {
+    padding: 15px;
+  }
+
+  .card-front img {
+    max-height: 80px;
+  }
+
+  .flip-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
