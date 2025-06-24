@@ -335,6 +335,13 @@ padding: 20px;
             font-size: 0.9rem;
             color: #ffffff;
         }
+        .team-section h1{
+            text-align: center;
+            color: #f8d33d;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
 
 
 @media screen and (max-width: 768px) {
