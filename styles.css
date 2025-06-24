@@ -28,6 +28,7 @@ body.group-2{
   background-size: cover;
   min-height: 100vh;
   backdrop-filter: blur(15px);
+  padding-bottom: 80px;
 }
 
 header a:hover{
@@ -54,8 +55,13 @@ footer{
     height:fit-content;
     margin: 0;
     padding: 20px 0;
-    overflow: hidden;
     backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1100;
 }
 
 .homeinfo {
@@ -138,28 +144,30 @@ padding: 20px;
 
 
 .company-name .logo {
-  position: absolute;
-  top: 2px;
-  left: 20px;
+  position: static;
+  margin-left: 20px;
   height: 50px;
-  width: 50px;
-  padding-top: 4px;
 }
 .company-name .brandname {
-  position: absolute;
-  top: 0px;
-  left: 60px;
+  position: static;
+  margin-left: 10px;
   height: 45px;
-  width: 225px;
-
 }
 
-
+/* Style nav links container */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  margin-left: auto;
+  padding-right: 20px;
+}
 
 
 .contact-info{
   padding-top: 10%;
   color: #ffffff;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .contact-info h1 {
@@ -292,6 +300,9 @@ padding: 20px;
   background: #f8d33d;
 }
 
+#mobile-menu {
+  display: none;
+}
 
 
 .team-section {
@@ -326,14 +337,18 @@ padding: 20px;
             background-color: rgba(0, 0, 0, 0.29);
             box-shadow: 1px 3px 10px 10px rgba(255, 255, 255, 0.2);
         }
-        .team-member h2 {
-            font-size: 1rem;
+        .degree {
+            font-size: .8rem;
             margin-bottom: 10px;
             color:rgb(1, 255, 247);
         }
         .team-member p {
             font-size: 0.9rem;
             color: #ffffff;
+        }
+        .team-member address{
+          margin-top: .7rem;
+          font-size: .7rem;
         }
         .team-section h1{
             text-align: center;
@@ -342,6 +357,12 @@ padding: 20px;
             margin-bottom: 30px;
             font-weight: bold;
         }
+        .team-name{
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color:#f8d33d;
+        }
+        
 
 
 @media screen and (max-width: 768px) {
@@ -361,6 +382,37 @@ padding: 20px;
   .flip-btn {
     font-size: 14px;
     padding: 8px 16px;
+  }
+
+.nav-links{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #e5b800;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 200px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+  padding: 10px 0;
+  z-index: 1200;
+}
+
+/* Show menu when toggled */
+.nav-links.active {
+  display: flex;
+}
+
+  #mobile-menu {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 20px;
+    z-index: 1000;
   }
 }
 
