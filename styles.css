@@ -36,7 +36,8 @@ header a:hover{
 }
 
 footer{
-    text-align:center;
+  display: flex;
+  flex-direction: row;
     background-color: rgba(52, 57, 58, 0.4);
     color: #ffffff;
     padding: 20px;
@@ -45,6 +46,20 @@ footer{
     position: fixed;
     width: 100%;
     backdrop-filter: blur(8px);
+    height: auto;
+}
+
+#footer-links{
+  width: 20%;
+}
+
+footer p{
+  width: 80%;
+  padding-left: 1rem;
+}
+
+#footer-links a{
+  padding-left: 0.2rem;
 }
 
 .company-name{
