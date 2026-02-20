@@ -6,53 +6,119 @@
     <title>Amicis Innovations</title>
     <meta name="description" content="Amicis Innovations builds responsive, modern websites and digital tools for small businesses.">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4b08f514fc.js" crossorigin="anonymous"></script>
-    <script src="menu.js" defer></script>
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
+<body>
+<nav class="nav-bar">
+  <img id="nav-logo" src="images/header.png">
+  <ul id="nav-links">
+    <li><a href="team.html">Our Team</a></li>
+    <li><a href="products.html">Products and Solutions</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+<button id="menu-toggle">
+    <i class="fa-sharp fa-solid fa-bars fa-2xl"></i>
+</button>
+<ul id="mobile-nav" class="mobile-nav">
+    <li><a href="team.html">Our Team</a></li>
+    <li><a href="products.html">Products and Solutions</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+</ul>
+</nav>
+<section class="hero">
+        <video autoplay muted loop playsinline class="hero-video">
+        <source src="background.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content">
+    <h1>
+  Crafting the future, <span class="highlight">together</span>
+    </h1>
 
-
-<body class="group-1">
-<section class="company-name">
-  <img src="/images/brand-removebg-preview.png" alt="logo" class="logo">
-  <img src="/images/brand_name-removebg-preview.png" alt="brandname" class="brandname">
-
-  <div class="nav-links" id="nav-links">
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="team.html">Our Team</a>
-    <a href="products.html">Products and Solutions</a>
-    <a href="contact.html">Contact Us</a>
-  </div>
-
-  <button id="mobile-menu" class="menu-toggle">
-    <i class="fa-sharp fa-solid fa-bars fa-2xl" style="color: #EDEDED"></i>
-  </button>
-</section>
-
-<section class="homeinfo">
-    <h2>Crafting the future, together</h2>
     <p>At Amicis Innovations, we build web-based solutions for small business and enterpreneurs who are looking for profressional and affordable websites to help their businesses thrive.</p>
     <p>Get a free quote for your website today</p>
-    <button class="btn"><a href="contact.html">Get in touch</a></button>
+    <button class="btn" id="contact-btn">Get In Touch</button>
+</div>
+
 </section>
-</body>
+<section class="info">
+    <section class="text">
+        <h2>Who Are We?</h2>
+        <p>'Amicis' is a Latin word meaning 'Friends' and at Amicis Innovations that's exactly what we are, a group of friends working together to create something special.</p>
+        <p>We are a small team of passionate students from the University of the Witwatersrand, on a mission to make great websites accessible to small businesses and startups.</p>
+        <button class="btn" id="team-btn">Meet The Team</button>
+    </section>
+        <div class="team-img-container">
+    <img id="team-img" src="images/IMG-20260205-WA0008.jpg">
+</div>
+</section>
+
+<section class="product-marquee">
+  <div class="marquee-track">
+    <span>Responsive Websites</span>
+    <span>Deployed with GitHub Pages</span>
+    <span>SupaBase Cloud Storage</span>
+    <span>Authentication</span>
+    <span>Website Audits</span>
+    <span>E-Commerce with Shopify</span>
+
+    <!-- duplicate for seamless loop -->
+    <span>Responsive Websites</span>
+    <span>Deployed with GitHub Pages</span>
+    <span>SupaBase Cloud Storage</span>
+    <span>Authentication</span>
+    <span>Website Audits</span>
+    <span>E-Commerce with Shopify</span>
+  </div>
+</section>
+<section class="info">
+    <section class="text">
+        <h2>What We Offer</h2>
+        <p>Too often, small businesses get left behind in the online space. We at Amicis Innovations are here to fix that, by offering affordable, tailored web-based solutions without cutting corners.</p>
+        <button class="btn" id="products-btn">Find Out More</button>
+    </section>
+</section>
+<section class="portfolio">
+    <h2>Our Portfolio</h2>
+
+    <div class="portfolio-logos">
+        <a href="https://www.glenview-primary.co.za">
+            <img src="images/Gview.png" class="partner-logo" id="Gview">
+        </a>
+
+        <a href="https://www.impact-tutoring.co.za">
+            <img src="images/Impact.png" class="partner-logo" id="Impact">
+        </a>
+    </div>
+</section>
 <footer>
-    <p>© 2025 Amicis Innovations. All rights reserved. <br>
-    info@amicisinnovations.co.za</p>
-    <section id="footer-links">
+    <section class="footer-main">
+    <img src="images/logo.png" id="footer-logo">
+    <ul class="footer-links">
+    <li><a href="team.html">Our Team</a></li>
+    <li><a href="products.html">Products and Solutions</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <ul class="footer-links">
+    <li><a href="terms_of_service.html">Terms Of Service</a></li>
+    <li><a href="privacy_policy.html">Privacy Policy</a></li>
+    </ul>
+    <section id="social-media">
              <a href="https://www.instagram.com/amicisinnovations/?hl=en" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-instagram" style="color: white"></i>
             </a>
             <a href="https://www.facebook.com/profile.php?id=61580243908663" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-facebook-f" style="color: white"></i>
             </a>
-            <a href="https://www.linkedin.com/posts/amicis-innovations_amicis-is-a-latin-word-meaning-friends-activity-7371576746216853504-w4mJ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEu-3gkB8eH4FIjMQReUvRxRR_D_82lYRQE" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
-            </a>
+            <p>© 2026 Amicis Innovations | All rights reserved.</p>
+    </section>
     </section>
 </footer>
+<script src="logo.js"></script>
+<script src="index.js"></script>
+</body>
 </html>
