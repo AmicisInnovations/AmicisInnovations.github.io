@@ -224,6 +224,10 @@ nav{
             #000051
         );
     }
+
+    .hero2 h2{
+        font-size: 2rem;
+    }
 }
 
 
